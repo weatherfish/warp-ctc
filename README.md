@@ -1,5 +1,7 @@
 ![Baidu Logo](/doc/baidu-research-logo-small.png)
 
+[In Chinese 中文版](README.zh_cn.md)
+
 # warp-ctc
 
 A fast parallel implementation of CTC, on both CPU and GPU.
@@ -118,8 +120,7 @@ for parallelization across threads.
 
 ## Interface
 
-The interface is in
-[`include/ctc.h`](https://github.com/baidu-research/ctc-release/blob/master/include/ctc.h).
+The interface is in [`include/ctc.h`](include/ctc.h).
 It supports CPU or GPU execution, and you can specify OpenMP parallelism
 if running on the CPU, or the CUDA stream if running on the GPU. We
 took care to ensure that the library does not perform memory
@@ -134,7 +135,7 @@ at this time.
 First get the code:
 
 ```
-git clone
+git clone https://github.com/baidu-research/warp-ctc.git
 cd warp-ctc
 ```
 
